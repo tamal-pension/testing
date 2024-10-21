@@ -25,3 +25,4 @@ jobs:
       OS: "amzn2023"
       APP: "pension-replication"
       TOOLKIT_VERSION: "default"
+      IS_TEST: true
