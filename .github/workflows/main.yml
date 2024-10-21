@@ -17,3 +17,4 @@ permissions:
 jobs:
   calling-reusable-workflow:
     uses: xXkoshmarikXx/testing-reusable-workflow/.github/workflows/goldenimage-workflow.yml@default
+    
