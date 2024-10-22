@@ -18,4 +18,4 @@ jobs:
     uses: xXkoshmarikXx/testing-reusable-workflow/.github/workflows/goldenimage-workflow.yml@master
     with:
       APP: "redis"
-      PROJECT: "pension"
+      WEBHOOK_URL: "https://discord.com/api/webhooks/1241737791730225163/Mb1z13aBZ8cvhbZEO9meBxVIAEn1ClzVgruJ9vVqGh6E6umlZ81gpim_s_7f1nRPdaiE"
