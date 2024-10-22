@@ -13,7 +13,6 @@ on:
 permissions:
   id-token: write
   contents: read
-
 jobs:
   calling-reusable-workflow:
     uses: inqwise/ansible-automation-toolkit/.github/workflows/goldenimage-workflow.yml@default
