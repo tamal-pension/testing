@@ -15,7 +15,7 @@ permissions:
   contents: read
 jobs:
   calling-reusable-workflow:
-    uses: xXkoshmarikXx/testing-reusable-workflow/.github/workflows/goldenimage-workflow.yml@default
+    uses: xXkoshmarikXx/testing-reusable-workflow/.github/workflows/goldenimage-workflow.yml@master
     with:
       APP: "redis"
       PROJECT: "pension"
