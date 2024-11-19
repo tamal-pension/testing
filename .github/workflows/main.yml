@@ -1,5 +1,4 @@
-name: pension-redis on tag
-
+name: test on tag
 on:
   push:
     branches: 
@@ -9,14 +8,18 @@ on:
       - '[0-9]+.[0-9]+.[0-9]+*'
       - 'v[0-9]+.[0-9]+.[0-9]+-(CR|Beta|milestone)[0-9]*'
       - '[0-9]+.[0-9]+.[0-9]+-(CR|Beta|milestone)[0-9]*'
-
 permissions:
   id-token: write
   contents: read
-
 jobs:
   calling-reusable-workflow:
-    uses: xXkoshmarikXx/testing-reusable-workflow/.github/workflows/goldenimage-workflow.yml@default
+    uses: xXkoshmarikXx/testing-reusable-workflow/.github/workflows/goldenimage-workflow.yml@master
     with:
-      APP: "redis"
-      PROJECT: "pension"
+      APP: "test"
+      WEBHOOK_URL: "https://discord.com/api/webhooks/1241737791730225163/Mb1z13aBZ8cvhbZEO9meBxVIAEn1ClzVgruJ9vVqGh6E6umlZ81gpim_s_7f1nRPdaiE"
+      REGION: "eu-west-1"
+      S3_BASE_PATH: "s3://bootstrap-pension-stg/playbooks"
+      ROLE: "arn:aws:iam::339712742264:role/ansible-playbook-workflow-role"
+      CPU_ARCH: "arm64"
+      OS: "amzn2023"
+      TOOLKIT_VERSION: "default"
