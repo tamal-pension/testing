@@ -1,0 +1,7 @@
+{
+    "app": "web-application",
+    "profile": "production-profile",
+    "region": "us-east-1",
+    "version": "v1.2.3",
+    "ami": "ami-0123456789abcdef0"
+}
